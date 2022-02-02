@@ -1,0 +1,52 @@
+@import "../../sass/variables";
+
+.Sliders {
+  width: 100%;
+  background: $gray;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .Sliders_Item {
+      margin-top:1rem;
+      z-index:3;
+    h3 {
+      font-size: 0.97rem;
+      color: white;
+      padding-left: 2rem;
+      width: 80%;
+      margin-bottom:0.5rem;
+    }
+  }
+}
+
+.swiper {
+  width: 95%;
+  height: 8rem;
+  display: block;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,70 @@
+@import "../../sass/variables";
+
+.Hero {
+  background-image: $Hero;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: $gray;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .Hero_description {
+    h1 {
+      font-size: 3.2rem;
+    }
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    z-index: 2;
+
+    p {
+      width: 40rem;
+    }
+    .Hero_Button {
+      display: flex;
+      gap:1rem;
+
+      button {
+        width: 9rem;
+        height: 2rem;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor:pointer;
+        text-align:center;
+        font-size:1rem;
+        i{
+          margin-right:1rem;
+        }
+      }
+      .Hero_Button_Play{
+      }
+      .Hero_Button_Information{
+        background:gray;
+        opacity: 0.88;
+        width:12rem;
+
+      }
+    }
+  }
+}
